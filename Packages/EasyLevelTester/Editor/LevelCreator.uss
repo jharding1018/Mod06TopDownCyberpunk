@@ -1,0 +1,72 @@
+.unity-tab__header {
+    background-color: rgb(34, 40, 49);
+    color: rgb(238, 238, 238);
+    -unity-font-style: normal;
+    font-size: 16px;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.unity-tab__header:hover {
+    scale: 1.1 1.1;
+}
+
+.unity-tab__header:checked {
+    background-color: rgb(57, 62, 70);
+    color: rgb(214, 90, 49);
+    -unity-font-style: bold;
+}
+
+.unity-tab {
+    background-color: rgb(57, 62, 70);
+}
+
+.my-custom-button {
+    background-color: rgb(57, 62, 70);
+    color: rgb(214, 90, 49);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    font-size: 16px;
+    width: 45%;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border-left-color: rgb(214, 90, 49);
+    border-right-color: rgb(214, 90, 49);
+    border-top-color: rgb(214, 90, 49);
+    border-bottom-color: rgb(214, 90, 49);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0);
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.my-custom-button:hover {
+    background-color: rgb(214, 90, 49);
+    color: rgb(57, 62, 70);
+    scale: 1.1 1.1;
+}
+
+.my-custom-button:active {
+    background-color: rgb(34, 40, 49);
+    color: rgb(214, 90, 49);
+    scale: 0.9 0.9;
+}
+
+.Level-Creator-Header {
+    flex-wrap: wrap;
+    color: rgb(214, 90, 49);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    -unity-font-style: bold;
+    font-size: 20px;
+}

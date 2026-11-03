@@ -1,0 +1,34 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/LevelCreator.uss?fileID=7433441132597879392&amp;guid=3b21f09d83b30ae4694cbff5837fd22f&amp;type=3#LevelCreator"/>
+    <Style src="project://database/Assets/Editor/GameSetup.uss?fileID=7433441132597879392&amp;guid=a4cd7c224a43af34db0d29720366c452&amp;type=3#GameSetup"/>
+    <ui:Image source="project://database/Assets/Editor/LevelCreatorBanner.png?fileID=2800000&amp;guid=63d2e05a377fd9c46be14c47f1452fd6&amp;type=3#LevelCreatorBanner" style="aspect-ratio: 4; width: 100%; align-self: center; height: auto;"/>
+    <ui:TabView name="MyTabView" class="unity-tab-view">
+        <ui:Tab label="From Object" name="SceneTab" enabled="true">
+            <ui:VisualElement style="flex-grow: 1; min-height: 150px;">
+                <ui:Label text="Select a Game Object or Model File" class="ELT-Header" style="padding-top: 10px; border-left-color: rgb(34, 40, 49); border-right-color: rgb(34, 40, 49); border-top-color: rgb(34, 40, 49); border-bottom-color: rgb(34, 40, 49); border-bottom-width: 2px;"/>
+                <uie:ObjectField label="Scene Object" type="UnityEngine.GameObject, UnityEngine.CoreModule" name="tab1-input" style="padding-bottom: 10px; padding-top: 10px;"/>
+                <ui:VisualElement name="tab1-SelectOptions" class="Content-Section" style="flex-grow: 1; flex-direction: row; align-items: stretch; justify-content: space-around; align-content: center; margin-bottom: 10px; min-height: 50px; border-left-color: rgb(34, 40, 49); border-right-color: rgb(34, 40, 49); border-top-color: rgb(34, 40, 49); border-bottom-color: rgb(34, 40, 49);">
+                    <ui:Button text="Use Current Selected Object" name="tab1-UseCurrentSel" emoji-fallback-support="true" class="my-custom-button" style="aspect-ratio: auto; align-items: stretch; white-space: normal;"/>
+                    <ui:Button text="Highlight Selection" name="tab1-Highlight" class="my-custom-button" style="width: 50%; white-space: normal;"/>
+                </ui:VisualElement>
+                <ui:Label text="Project Asset Selected" name="tab1-ProjSelTxt" class="ELT-Text" style="display: none;"/>
+                <ui:Label text="Scene Asset Selected" name="tab1-SceneSelTxt" class="ELT-Text" style="display: none;"/>
+                <ui:Button text="Generate" name="tab1-Submit" emoji-fallback-support="false" class="my-custom-button" style="display: none; width: 90%; align-self: center;"/>
+            </ui:VisualElement>
+        </ui:Tab>
+        <ui:Tab label="From Terrain" name="TerrainTab" enabled="true">
+            <ui:VisualElement class="Content-Section" style="flex-grow: 1; min-height: 200px;">
+                <ui:Label text="Select a Terrain Data asset or a Terrain Object" class="ELT-Header" style="flex-wrap: wrap; border-left-color: rgb(34, 40, 49); border-right-color: rgb(34, 40, 49); border-top-color: rgb(34, 40, 49); border-bottom-color: rgb(34, 40, 49); border-bottom-width: 2px;"/>
+                <uie:ObjectField label="Terrain Data" name="tab2-input" type="UnityEngine.TerrainData, UnityEngine.TerrainModule" allow-scene-objects="false" class="Level-Creator-Input-Fields" style="flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px;"/>
+                <ui:VisualElement name="tab2-SelectOptions" style="flex-grow: 1; flex-direction: row; align-items: stretch; justify-content: space-around; align-content: center; margin-bottom: 10px;">
+                    <ui:Button text="Use Current Selected Object" name="tab2-UseCurrentSel" emoji-fallback-support="true" class="my-custom-button" style="width: 45%; aspect-ratio: auto; align-items: stretch; white-space: normal;"/>
+                    <ui:Button text="Highlight Selection" name="tab2-Highlight" class="my-custom-button" style="width: 45%; white-space: normal;"/>
+                </ui:VisualElement>
+                <ui:Label text="Project Asset Selected" name="tab2-ProjSelTxt" class="ELT-Text" style="display: none;"/>
+                <ui:Label text="Scene Asset Selected" name="tab2-SceneSelTxt" class="ELT-Text" style="display: none;"/>
+                <ui:Label text="Error: asset is not of type Terrain Data" name="tab2-TypeWarning" class="ELT-Text" style="display: none; color: rgb(255, 0, 0); margin-bottom: 10px; font-size: 12px;"/>
+                <ui:Button text="Generate" name="tab2-Submit" emoji-fallback-support="false" class="my-custom-button" style="width: 90%; display: none; align-self: center;"/>
+            </ui:VisualElement>
+        </ui:Tab>
+    </ui:TabView>
+</ui:UXML>

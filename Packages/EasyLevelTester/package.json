@@ -1,0 +1,14 @@
+{
+    "name": "com.coppercoatstudios.easyleveltester",
+    "version": "1.0.0",
+    "displayName": "Easy Level Tester",
+    "description": "Build, configure, and playtest your custom levels without writing a single line of code. Easy Level Tester empowers designers and artists to instantly bring static environments to life: automatically generate AI NavMeshes with one click, choose your game mode, and tweak spawn rules entirely through intuitive visual editors.",
+    "unity": "6000.3",
+    "author": {
+        "name": "Coppercoat Studios"
+    },
+    "dependencies": {
+        "com.unity.ai.navigation": "1.1.5",
+        "com.unity.cinemachine": "2.10.0"
+    }
+}

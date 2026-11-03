@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 6d242367d4a04b348a95246dd8af68b9
+  productGUID: 00c07470b95b981449a417cc8fbb1a63
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -928,10 +928,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 59f626f1-572c-4453-9fb7-2ad96db90a08
+  cloudProjectId: d3b949b5-2377-42e1-bc88-42330766b783
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Mod06Cyberpunk
+  projectName: Mod06Cyberpunk 2026-11-03_16-22-49
   organizationId: jacob-harding
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

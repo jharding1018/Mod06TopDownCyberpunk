@@ -1,0 +1,47 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/GameSetup.uss?fileID=7433441132597879392&amp;guid=a4cd7c224a43af34db0d29720366c452&amp;type=3#GameSetup"/>
+    <Style src="project://database/Assets/Editor/LevelCreator.uss?fileID=7433441132597879392&amp;guid=3b21f09d83b30ae4694cbff5837fd22f&amp;type=3#LevelCreator"/>
+    <ui:Image source="project://database/Assets/Editor/GameSetupBanner.png?fileID=2800000&amp;guid=47a17eeada018ed4f8d45c01de05a556&amp;type=3#GameSetupBanner" style="width: 100%; aspect-ratio: 4; min-width: 0%;"/>
+    <ui:TabView name="MyTabView">
+        <ui:Tab label="Point &amp; Click" name="PointAndClick">
+            <ui:VisualElement name="PageContainer" style="flex-grow: 1; min-height: 500px;">
+                <ui:Label text="Select Assets To Spawn" name="Header" class="Level-Creator-Header" style="border-bottom-width: 2px; border-left-color: rgb(34, 40, 49); border-right-color: rgb(34, 40, 49); border-top-color: rgb(34, 40, 49); border-bottom-color: rgb(34, 40, 49); margin-bottom: 4px; margin-top: 10px;"/>
+                <ui:VisualElement name="Core" class="Content-Section" style="min-height: 50px; height: auto;">
+                    <ui:Label text="Required For Gameplay" class="ELT-Subheader"/>
+                    <ui:Toggle label="Spawn Core Assets" name="tab1-SpawnCoreToggle" class="custom-toggle"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Spawning" class="Content-Section">
+                    <ui:Label text="Spawn Location" class="ELT-Subheader" style="-unity-font-style: normal; white-space: normal; font-size: 16px; margin-bottom: 4px; -unity-text-align: middle-left;"/>
+                    <ui:Label text="If false, assets will spawn at (0,0,0)" class="ELT-Text"/>
+                    <ui:Toggle label="Randomly Spawn In Scene" name="tab1-RandomSpawnToggle" class="GameSetupToggle customToggle custom-toggle"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Enemies-Items" class="Content-Section" style="flex-grow: 1;">
+                    <ui:Label text="Items To Spawn" class="Level-Creator-Header" style="-unity-font-style: normal; font-size: 16px; white-space: normal; margin-bottom: 4px;"/>
+                    <ui:Foldout text="Enemies" name="EnemyFoldout" class="custom-foldout">
+                        <ui:MultiColumnTreeView columns="" sort-column-descriptions="" name="tab1-EnemyTreeView">
+                            <ui:Columns>
+                                <ui:Column title="Enemy Type" width="100px"/>
+                                <ui:Column title="Quantity" width="100px"/>
+                                <ui:Column title="Patrol" width="50px"/>
+                                <ui:Column title="Game Object" width="150px"/>
+                            </ui:Columns>
+                        </ui:MultiColumnTreeView>
+                    </ui:Foldout>
+                    <ui:Foldout text="Items" name="ItemFoldout">
+                        <ui:MultiColumnTreeView columns="" sort-column-descriptions="" name="tab1-ItemTreeView">
+                            <ui:Columns>
+                                <ui:Column title="Item Type" width="100px"/>
+                                <ui:Column title="Quantity" width="100px"/>
+                                <ui:Column title="Game Object" width="150px"/>
+                            </ui:Columns>
+                        </ui:MultiColumnTreeView>
+                    </ui:Foldout>
+                </ui:VisualElement>
+                <ui:VisualElement name="Buttons" class="Content-Section" style="flex-grow: 1; padding-bottom: 8px; margin-bottom: 0;">
+                    <ui:Button text="Reset" name="tab1-Reset" class="my-custom-button" style="width: 90%; align-self: center; align-content: center; justify-content: center; align-items: center; margin-bottom: 4px; margin-top: 4px;"/>
+                    <ui:Button text="Generate Selected Assets" name="tab1-Submit" class="my-custom-button" style="width: 90%; align-items: center; justify-content: center; align-self: center; align-content: center; margin-top: 4px; margin-bottom: 4px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:Tab>
+    </ui:TabView>
+</ui:UXML>
