@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6933279a06f8dd44e8b877f677e096ef, type: 3}
+  m_Name: 0_Intro
+  m_EditorClassIdentifier: FeelSpeak::Esper.FeelSpeak.Graph.DialogueGraph
+  id: 0
+  graphName: Intro
+  startingNodeId: 0
+  dialogueNodes:
+  - graphId: 0
+    id: 0
+    position: {x: 496, y: 224}
+    inputConnections: []
+    outputConnections: []
+    character: {fileID: 11400000, guid: 4744262b34e16ef4981dfb63cb5a6bf7, type: 2}
+    emotion: {fileID: 0}
+    suppressEmotionAnimation: 0
+    suppressEmotionSound: 0
+    automaticNextOnComplete: 0
+    automaticNextDelay: 0
+    dialogue: Welcome to the city, kid. Caught wind a new merc would be showing up
+      soon and here you are.
+    voiceLine: {fileID: 0}
+  - graphId: 0
+    id: 1
+    position: {x: 651, y: 228}
+    inputConnections: []
+    outputConnections: []
+    character: {fileID: 11400000, guid: 4744262b34e16ef4981dfb63cb5a6bf7, type: 2}
+    emotion: {fileID: 0}
+    suppressEmotionAnimation: 0
+    suppressEmotionSound: 0
+    automaticNextOnComplete: 0
+    automaticNextDelay: 0
+    dialogue: "I\u2019ll let you in on a secret: I got a big job cooking up here,
+      and I need somebody to run it. Smash and grab type gig."
+    voiceLine: {fileID: 0}
+  - graphId: 0
+    id: 2
+    position: {x: 812, y: 225}
+    inputConnections: []
+    outputConnections: []
+    character: {fileID: 11400000, guid: 4744262b34e16ef4981dfb63cb5a6bf7, type: 2}
+    emotion: {fileID: 0}
+    suppressEmotionAnimation: 0
+    suppressEmotionSound: 0
+    automaticNextOnComplete: 0
+    automaticNextDelay: 0
+    dialogue: "The catch? We\u2019re boosting an experimental implant off of Arkwright
+      Corp. Heaps of cash in it for you if that wasn\u2019t enough to get you interested."
+    voiceLine: {fileID: 0}
+  - graphId: 0
+    id: 3
+    position: {x: 1001, y: 240}
+    inputConnections: []
+    outputConnections: []
+    character: {fileID: 11400000, guid: 4744262b34e16ef4981dfb63cb5a6bf7, type: 2}
+    emotion: {fileID: 0}
+    suppressEmotionAnimation: 0
+    suppressEmotionSound: 0
+    automaticNextOnComplete: 0
+    automaticNextDelay: 0
+    dialogue: "Let me know if you\u2019re interested and I\u2019ll send over the
+      info."
+    voiceLine: {fileID: 0}
+  choiceNodes: []
+  delayNodes: []
+  soundNodes: []
+  connections:
+  - graphId: 0
+    outputNodeId: 0
+    inputNodeId: 1
+    outputPortIndex: 0
+    inputPortIndex: 0
+  - graphId: 0
+    outputNodeId: 1
+    inputNodeId: 2
+    outputPortIndex: 0
+    inputPortIndex: 0
+  - graphId: 0
+    outputNodeId: 2
+    inputNodeId: 3
+    outputPortIndex: 0
+    inputPortIndex: 0
+  callOnceOnDialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  callOnceOnDialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []

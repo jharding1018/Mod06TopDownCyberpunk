@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "ad390a8c-45ad-4298-ba15-f4295cbd1e94",
+            "actions": [
+                {
+                    "name": "Continue",
+                    "type": "Button",
+                    "id": "eef4bf8b-6b9c-47cb-9904-316f9d6bd6c6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "693fac25-6f25-4737-bfa5-3efbbdcb50c0",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Continue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
