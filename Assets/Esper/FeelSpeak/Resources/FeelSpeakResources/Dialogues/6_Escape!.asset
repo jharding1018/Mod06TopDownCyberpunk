@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6933279a06f8dd44e8b877f677e096ef, type: 3}
+  m_Name: 6_Escape!
+  m_EditorClassIdentifier: FeelSpeak::Esper.FeelSpeak.Graph.DialogueGraph
+  id: 6
+  graphName: Escape!
+  startingNodeId: 0
+  dialogueNodes:
+  - graphId: 6
+    id: 0
+    position: {x: 501, y: 129}
+    inputConnections: []
+    outputConnections: []
+    character: {fileID: 11400000, guid: 4744262b34e16ef4981dfb63cb5a6bf7, type: 2}
+    emotion: {fileID: 0}
+    suppressEmotionAnimation: 0
+    suppressEmotionSound: 0
+    automaticNextOnComplete: 0
+    automaticNextDelay: 0
+    dialogue: "Nothing personal, but Arkwright offered me a hefty price once they
+      caught wind of this job to make sure you don\u2019t make it out with that implant."
+    voiceLine: {fileID: 0}
+  - graphId: 1
+    id: 1
+    position: {x: 695, y: 139}
+    inputConnections: []
+    outputConnections: []
+    character: {fileID: 11400000, guid: 4744262b34e16ef4981dfb63cb5a6bf7, type: 2}
+    emotion: {fileID: 0}
+    suppressEmotionAnimation: 0
+    suppressEmotionSound: 0
+    automaticNextOnComplete: 0
+    automaticNextDelay: 0
+    dialogue: Sorry, kid!
+    voiceLine: {fileID: 0}
+  choiceNodes: []
+  delayNodes: []
+  soundNodes: []
+  connections:
+  - graphId: 6
+    outputNodeId: 0
+    inputNodeId: 1
+    outputPortIndex: 0
+    inputPortIndex: 0
+  callOnceOnDialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  callOnceOnDialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
